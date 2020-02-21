@@ -7,6 +7,7 @@ var multer=require('multer');
 var bcrypt=require('bcryptjs');
 var jwt=require('../../Helper/jwtHelper.js');
 
+
 const storage=multer.diskStorage({
   destination:function(req,file,cb){
     cb(null,'./uploads')
